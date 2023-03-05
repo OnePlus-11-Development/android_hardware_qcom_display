@@ -25,6 +25,7 @@ cc_library_shared {
         "-DLOG_TAG=\"qdgralloc\"",
         "-D__QTI_DISPLAY_GRALLOC__",
         "-Wno-sign-conversion",
+        "-Wno-format",
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
     ],
@@ -68,6 +69,7 @@ cc_library_shared {
         "-D__QTI_DISPLAY_GRALLOC__",
         "-Wno-sign-conversion",
         "-Wno-unused-parameter",
+        "-Wno-format",
     ],
     srcs: [
         "gr_allocator.cpp",
@@ -84,6 +86,7 @@ cc_library_shared {
     vendor: true,
     cflags: [
         "-Wno-sign-conversion",
+        "-Wno-unused-variable",
         "-DLOG_TAG=\"qtigralloc\"",
         "-D__QTI_DISPLAY_GRALLOC__",
     ],

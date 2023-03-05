@@ -9,7 +9,11 @@ cc_library_shared {
     vendor: true,
 
     header_libs: ["display_headers"],
-    cflags: ["-DLOG_TAG=\"SDM\""],
+    cflags: [
+        "-Wno-unused-parameter",
+        "-Wno-format",
+        "-DLOG_TAG=\"SDM\"",
+    ],
     srcs: [
         "debug.cpp",
         "rect.cpp",
